@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms</title>
+</head>
+<style>
+    .button {
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <form action="processOrder.php" method="post">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label>First Name <input type="text" name="firstName" Value="Name"/></label>
+            <br>
+            <label for="lastName">Last Name</label> <input type="text" id="lastName" name="lastName" placeholder="Enter Password"
+            />
+            <br>
+            <label>Password <input type="password " name="password " minlength="5 " maxlength="20"  /></label>
+            <br>
+            <label>Email <input type="email " name="email" readonly/></label>
+            <br>
+            <label>Number <input type="number " min="0 " max="120 " name="number " step="5"/></label>
+            <br>
+        </fieldset>
+        <fieldset>
+            <legend>Other Information</legend>
+            <label>Favorite Color <input type="color " name="color "/></label>
+            <br>
+            <label>Date <input type="date " name="date "/></label>
+            <br>
+            <label>Month <input type="month " name="month "/></label>
+            <br>
+            <label>Week <input type="week " name="week" Value="Disabled" disabled/></label>
+            <br>
+            <label>Range <input type="range " name="range " min="0 " max="10" Hidden/></label>
+            <br>
+            <label>Telephone <input type="tel " name="phone" /></label>
+            <br>
+            <lable><textarea name="comments " id="textarea " cols="30 " rows="10" Type here></textarea></lable>
+            <br>
+        </fieldset>
+        <lable>
+            Do you think Donald Trump is doing a good job?
+            <input type="radio" name="TrumpPoll" value="Yes" />Yes
+            <input type="radio" name="TrumpPoll" value="No" />No
+        </lable>
+        <br>
+        <lable>
+            Sides
+            <input type="checkbox" name="sides" value="fries" checked/>Fries
+            <input type="checkbox" name="sides" value="onionsRings" />Onions Rings
+        </lable>
+        <br>
+        <select name="dreamCar">
+            <option disabled selected>Select One</disabled>
+            <option value="Toyota">Toyota</options>
+            <option>Honda</options>
+            <option>Lamborghini</options>
+        </select>
+        <br>
+
+        <input class="button" type="reset" />
+        <input type="button" value="Button" />
+        <input type="submit" />
+
+        <button type="reset">Dont Click me!</button>
+    </form>
+</body>
+
+</html>

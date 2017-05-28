@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Atribute Selector</title>
+</head>
+<style>
+    /*    a[href="https://www.google.com"],
+    [href="https://www.microsoft.com"] {
+        background-color: yellow;
+    }*/
+
+    a[href^="https"] {
+        background-color: yellow;
+    }
+
+    a {
+        padding-left: 18px;
+        display: inline-block;
+        height: 36px;
+    }
+
+    a[href$="PDF"] {
+        background: url("pdf.jpg") no-repeat;
+    }
+
+    a[href*=".doc"] {
+        background: url("doc.jpg") no-repeat;
+    }
+</style>
+
+<body>
+    <ul>
+        <li><a href="https://www.google.com"> Google</a></li>
+        <li><a href="https://www.microsoft.com"> Microsoft</a></li>
+        <li><a href="#one"> One</a></li>
+        <li><a href="#two"> Two</a></li>
+        <li><a href="myDocument.doc"> Doc 1</a></li>
+        <li><a href="myDocument1.doc"> Doc 2</a></li>
+        <li><a href="myPDF.pdf"> PDF</a></li>
+    </ul>
+    <!--id class type
+    1  0     0   #it
+    0  1     1   .foo 
+    0  0     1   type
+    0  1     1   .foo p
+    0  10    0   .one .two ect....-->
+
+</body>
+
+</html>
