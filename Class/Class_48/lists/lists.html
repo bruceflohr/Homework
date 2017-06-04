@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<style>
+		.hebrew{
+			list-style-type: hebrew;
+		}
+		.square{
+			list-style-type: sqaure;
+		}
+		li{
+			<!-- padding-top: 20px;
+			padding-bottom: 20px;
+			margin: 20px; -->
+			border: 1px dashed black;
+			background-color: pink;
+<!-- 			line-height: 30px;
+			font-size: 15px; -->
+		}
+		.bullet{
+			list-style-image: url(bullet.png);
+		}
+	</style>
+	<title>Lists</title>
+</head>
+<body>
+	Hey there!
+	<h2>Things to do</h2>
+	<ul Class="hebrew">
+		<li>Learn HTML Really Big so I can get a job</li>
+		<li>Learn CSS</li>
+		<li>Learn JAVA</li>
+			<ul Class="square">
+			<li>Learn HTML</li>
+			<li>Learn CSS</li>
+			<li>Learn JAVA</li>
+				<ul Class="bullet">
+				<li>Learn HTML</li>
+				<li>Learn CSS</li>
+				<li>Learn JAVA</li>
+				</ul>
+	</ul>
+	
+	<h2>More things to do</h2>
+	<ol>
+		<li>Learn PHP</li>
+		<li>Learn MYSQL</li>
+		<li>Learn JAVAScript</li>
+		<ol>
+				<li>Learn PHP</li>
+				<li>Learn MYSQL</li>
+				<li>Learn JAVAScript</li>
+				</ol>
+	</ol>
+</body>
+</html>
