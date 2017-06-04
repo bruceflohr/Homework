@@ -1,0 +1,74 @@
+	body{
+		text-align:center;
+		background-image: url("htdocs\Lambo\img");
+		color: grey;
+	}
+
+	h1{
+		color:grey;
+		font-size: 35px;
+		border: 1px;
+		font-family: "Courier New", Courier, monospace;
+		letter-spacing: 10px;
+	}
+	h1.selected{
+		color:red;
+		font-size: 35px;
+	}
+
+	h2{
+		color:grey;
+		font-size: 25px;
+	}
+
+	header{
+		text-align:center;
+	}
+
+	a: {
+		color:red;
+		font-size: 25px;
+	}
+
+
+	menubar{
+		text-align:center;
+		width:100px;
+		height:100px;
+		color:grey;
+		font-size: 25px;
+	}
+
+	div{
+		text-align:center;
+		color:grey;
+		font-size: 25px;
+	}
+	
+	
+	a.selected{
+		color:white;
+	}
+
+	a:link{
+		color:grey;
+	}
+
+	a:visited{
+		color:white;
+	}
+
+	a:hover{
+		color:white;
+	}
+
+	a{
+		text-decoration: none;
+	}
+
+
+	img{
+		width:25%;
+		height:25%;
+	}
+	
