@@ -1,0 +1,8 @@
+id  class   type
+1   0       0       #it
+0   1       0       .foo
+0   0       1       p
+
+0   1       1       .foo p
+
+0   10      0       .one .two etc... .ten
