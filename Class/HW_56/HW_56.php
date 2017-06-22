@@ -11,7 +11,7 @@
     // 2nd Method
         $name = "Name ";
         $year = "Year";
-        $p1 = "Donald Trump ";
+        $p1 = "Donald J Trump ";
         $y1 = "2016";
 
         $p2 = "Barack Obama ";
@@ -20,28 +20,30 @@
         $p3 = "George Bush ";
         $y3 = "2008 ";
     ?>
+    <div class="container">
          <Table class="table table table-striped table table-bordered table table-hover ">
                 <thead>
                     <tr>
-                        <th><?php echo $name; ?></th>
-                        <th><?php echo $year; ?></th>
+                        <th><?= $name; ?></th>
+                        <th><?= $year; ?></th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><?php echo $p1; ?></td>
-                        <td><?php echo $y1; ?></td>
+                        <td><?= $p1; ?></td>
+                        <td><?= $y1; ?></td>
                     </tr>
                     <tr>
-                        <td><?php echo $p2; ?></td>
-                        <td><?php echo $y2; ?></td>
+                        <td><?= $p2; ?></td>
+                        <td><?= $y2; ?></td>
                     </tr>
                      <tr>
-                        <td><?php echo $p3; ?></td>
-                        <td><?php echo $y3; ?></td>
+                        <td><?= $p3; ?></td>
+                        <td><?= $y3; ?></td>
                     </tr>
                 </tbody>
             </Table>
+    </div>
 <footer>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
