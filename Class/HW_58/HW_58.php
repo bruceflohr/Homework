@@ -71,7 +71,7 @@
             <h1>Thank you for submitting form</h1>
         </div>
             <?php if (isset($errors)) : ?>
-            <div class="well text-danger">
+            <div class="well text-danger jumbotron">
                 <ul>
                     <?php foreach($errors as $error) : ?>
                         <li><?= $error ?></li>
@@ -79,7 +79,6 @@
                 </ul>
             </div>
             <?php endif ?>
-
     </div>
     <script src="/jquery-1.12.4.min.js"></script>
     <script src="/bootstrap-3.3.7/js/bootstrap.min.js"></script>

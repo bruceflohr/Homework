@@ -84,7 +84,7 @@
 <body>
     <div class="container">
         <div class="jumbotron text-center">
-            <h1>PCS Interest Calculator</h1>
+            <h1>HW_58 B</h1>
         </div>
 
         <form class="form-horizontal" method="post">
@@ -124,7 +124,7 @@
             <div class="form-group">
                 <label for="rate" class="col-sm-2 control-label">Rating</label>
                 <div class="col-sm-10">
-                    <input type="number" min="1" max="10" step="1" class="form-control" id="rate" name="rate" placeholder="Rating" xrequired
+                    <input type="rating" min="1" max="10" step="1" class="form-control" id="rate" name="rate" placeholder="Rating" xrequired
                         value="<?= $rate ?>"
                     >
                 </div>
@@ -137,8 +137,12 @@
         </form>
 
     </div>
-    <script src="/jquery-1.12.4.min.js"></script>
-    <script src="/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
