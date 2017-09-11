@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous"-->
+    <link rel="stylesheet" href="/bootstrap-3.3.7/css/bootstrap.min.css" />
+    <style>
+        body {
+            padding-top: 70px;
+        }
+
+        @media screen and (min-width: 992px) {
+            #products figure {
+                border-right: 1px solid gray;
+                /*Could just give two sides of middle one*/
+            }
+
+            #products figure:last-of-type {
+                border-right-color: transparent;
+            }
+        }
+
+        #signup {
+            margin-top: 40px;
+        }
+
+        img.img-responsive {
+            width: 100%;
+        }
+
+        footer .navbar-text {
+            margin-left: 0;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#links">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">ESTUFF</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="link">
+                <ul class="nav navbar-nav">
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#signup">Sign Up</a></li>
+                    <li><a href="#financials">Financials</a></li>
+                    <li><a href="#aboutus">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header class="jumbotron text-center">
+            <h1 class="text-uppercase">estuff</h1>
+            <h2>A <em>PCS</em> company</h2>
+        </header>
+
+        <section id="products">
+            <h2>Products</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui ipsa blanditiis vero adipisci doloremque nobis. Facilis, nihil,
+                impedit. Veritatis sint labore assumenda vero, aliquam quis!
+            </p>
+            <div class="row">
+                <figure class="col-md-4">
+                    <h2 class="text-center">Computers</h2>
+                    <img src="images/macworld.jpg" alt="computer" class="img-responsive" />
+                    <figcaption class="text-justify">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit debitis, praesentium ad. Cumque illum, commodi accusantium.
+                        Obcaecati fuga molestiae quis praesentium eveniet doloribus reprehenderit laborum!
+                    </figcaption>
+                </figure>
+                <figure class="col-md-4">
+                    <h2 class="text-center">Choirs</h2>
+                    <video src="media/El%20Hanaar%20Hazeh.mp4" poster="images/shira.png" controls class="img-responsive"></video>
+                    <figcaption class="text-justify">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit debitis, praesentium ad. Cumque illum, commodi accusantium.
+                        Obcaecati fuga molestiae quis praesentium eveniet doloribus reprehenderit laborum!
+                    </figcaption>
+                </figure>
+                <figure class="col-md-4">
+                    <h2 class="text-center">Candy</h2>
+                    <img src="images/candy.png" alt="candy" class="img-responsive" />
+                    <figcaption class="text-justify">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit debitis, praesentium ad. Cumque illum, commodi accusantium.
+                        Obcaecati fuga molestiae quis praesentium eveniet doloribus reprehenderit laborum!
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+        <section id="signup">
+            <form action="signup.php" method="post" class="well form-inline text-center">
+                <h2 class="text-center">Sign Me Up!</h2>
+                <div class="form-group text-left">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group text-left">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <button type="submit" class="btn btn-default">Sign Me Up!</button>
+            </form>
+        </section>
+        <section id="financials">
+            <h2>Financials</h2>
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1 table-responsive">
+                    <table class="table table-striped table-bordered table-hover">
+                        <caption>
+                            <h3>Profits - By Quarter</h3>
+                        </caption>
+                        <thead>
+                            <tr>
+                                <th>Year</th>
+                                <th>1st Quarter profits</th>
+                                <th>2nd Quarter profits</th>
+                                <th>3rd Quarter profits</th>
+                                <th>4th Quarter profits</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>2012</th>
+                                <td>$1254564.32</td>
+                                <td>$1154545.67</td>
+                                <td>$1236566.98</td>
+                                <td>$1368546.32</td>
+                                <td>$5050934.29</td>
+                            </tr>
+                            <tr>
+                                <th>2013</th>
+                                <td>$1385475.87</td>
+                                <td>$1485690.23</td>
+                                <td>$1365568.54</td>
+                                <td>$1545435.11</td>
+                                <td>$5623344.75</td>
+                            </tr>
+                            <tr>
+                                <th>2014</th>
+                                <td>$1589878.76</td>
+                                <td>$1698986.45</td>
+                                <td>$1645456.32</td>
+                                <td>$1789890.35</td>
+                                <td>$6545657.88</td>
+                            </tr>
+                            <tr>
+                                <th>2015</th>
+                                <td>$1889776.22</td>
+                                <td>$1854565.71</td>
+                                <td>NA</td>
+                                <td>NA</td>
+                                <td>$3654654.93</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th colspan="5">Total</th>
+                                <td>$20978798.85</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+        </section>
+        <section id="aboutus">
+            <h2>About Us</h2>
+            <p>
+                Start Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae provident eum natus quas, in, sed dolorum. Molestias
+                consequuntur nisi vero reprehenderit sunt soluta, laboriosam aliquid animi! Quis a earum possimus fuga vitae
+                dolorum numquam rem dignissimos at ipsam excepturi minus dolorem itaque, in, debitis veniam nihil quasi molestiae
+                hic quisquam perferendis doloribus. Cupiditate obcaecati dolores distinctio fuga quam voluptates reiciendis
+                error quos aspernatur atque. Non temporibus cupiditate deserunt eius provident facere enim totam et obcaecati,
+                voluptas ratione veritatis cum impedit nobis nam minima tempore dignissimos adipisci, quasi maxime, dolorum
+                voluptate. Nobis quidem repellendus voluptatibus, ratione ea obcaecati ab rerum! Cumque, similique! Ex odio
+                veniam libero aliquid unde nulla accusamus adipisci sint aliquam quidem minima temporibus sequi, quibusdam,
+                enim consequatur doloribus quod reiciendis, maxime natus voluptatibus. Distinctio porro excepturi asperiores
+                placeat, eaque quisquam eligendi. Doloremque, quasi molestiae natus, asperiores nostrum iure, facere itaque
+                esse neque ratione quis voluptatem repellat velit quisquam blanditiis. Minima, architecto pariatur saepe
+                deserunt voluptas fugiat dicta accusantium, distinctio, alias perferendis eaque, iste necessitatibus similique
+                reiciendis. Quas veniam dolorem dicta recusandae fuga, ratione hic optio sunt laborum nobis facere fugit
+                voluptatum, at odio delectus ex et, eius a veritatis explicabo. Eligendi dolor consequatur ullam ut voluptatibus
+                facilis eum quasi consectetur, maxime ex veritatis, voluptate reprehenderit magnam, commodi culpa temporibus
+                necessitatibus repellat quia velit ad vero nostrum eius accusantium. Sequi ad dicta, sit praesentium maxime
+                iure, at. Facere sint dolorem incidunt minus repellendus voluptate numquam autem assumenda, illo voluptatibus.
+                Saepe aut illum laboriosam, ex illo quos perspiciatis fugit ipsum! Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Recusandae sit quasi corporis, totam autem consequuntur soluta hic ex tempore eligendi,
+                ab architecto at distinctio. Dolorem accusantium libero repellat non, temporibus minima vitae ullam consectetur
+                velit alias fuga commodi aperiam quia, animi rerum eveniet architecto vel deleniti similique nulla tempora.
+                Obcaecati pariatur blanditiis aut similique itaque commodi perferendis quibusdam beatae est provident quos
+                excepturi quam, eius harum temporibus earum ad molestias accusamus doloremque laboriosam debitis molestiae
+                veritatis nam aliquam. Voluptatum, dolor sequi illum eum magnam quia, doloremque at ducimus exercitationem
+                delectus aperiam minima, et nisi praesentium. Reprehenderit odio veritatis eos consequuntur libero, aperiam
+                voluptates voluptatibus provident. Nisi molestias et tempore voluptatum doloribus dolore laboriosam dicta,
+                reiciendis enim. Ea necessitatibus ad blanditiis iusto ut, recusandae explicabo id inventore aperiam magnam
+                ullam accusantium vero maxime qui assumenda. Provident quibusdam hic dolore, aspernatur minus tempora nemo
+                quas reprehenderit. Fugit, harum ipsum facilis. Consectetur repellendus possimus veniam dolor quia totam
+                quam voluptatum quisquam ipsum neque illo eaque repudiandae incidunt voluptatem accusamus placeat, ipsa provident
+                maxime veritatis ratione impedit laborum eos minima. Minus vero sint qui quisquam eius praesentium, aperiam,
+                placeat omnis dolor a, quas voluptatem provident obcaecati quia! Commodi nesciunt dignissimos, adipisci labore
+                accusantium, dolore totam quisquam aliquid iste dolorem fugiat vero rem eius illo maiores debitis sit dicta
+                voluptas, quasi nemo error nam. Dolorum maxime non iste hic praesentium molestiae explicabo amet. Magnam
+                recusandae possimus consequuntur esse ea delectus necessitatibus debitis id. Officia adipisci eaque aliquam
+                sunt, quia ea iste ipsam quidem eligendi eos placeat nihil expedita rerum illum praesentium officiis rem
+                natus veniam debitis soluta eum, sapiente voluptas quibusdam! Repudiandae nihil, laborum quasi, ad saepe
+                veniam perferendis dolorum praesentium facilis ab qui accusamus, quibusdam ratione minus incidunt quisquam.
+                Doloremque earum quod ab porro repellat expedita, dolor quibusdam dolorum error, ex placeat, nam. Explicabo
+                quam voluptates, mollitia repellat dolor et, temporibus eius, blanditiis atque doloribus eaque exercitationem
+                sequi accusantium. Dolorem in distinctio totam omnis dignissimos, quis sed facilis, eveniet impedit ipsam
+                quos consequatur debitis officia voluptates optio voluptatibus. Repudiandae enim similique tempore optio
+                cumque libero debitis iusto, est reprehenderit, a asperiores sed deleniti, recusandae rerum id. Sunt voluptate
+                corporis dolorum, non eligendi sit molestias, pariatur aperiam quod, numquam tempora. Ab fuga minima natus,
+                a ipsa, perspiciatis voluptates animi quae doloribus quibusdam. Cumque sit voluptatum vel, suscipit reprehenderit
+                quia iste repellendus est, nam modi quam mollitia architecto minima delectus repudiandae libero, veritatis
+                harum perferendis? Veniam eligendi modi nam molestias harum quae, tempora cumque voluptate sequi officia.
+                Veniam animi excepturi ex unde molestias nostrum, doloribus neque amet voluptatem, velit alias nesciunt dolor
+                officiis consectetur non omnis at ullam facere minus. Quae aspernatur adipisci sit nobis ea impedit deleniti
+                at eius vitae? Tempora tempore veniam laborum repudiandae officia dignissimos est, beatae commodi exercitationem
+                velit similique in impedit placeat debitis. Magni, quia doloribus ad. Pariatur quisquam dolorem soluta nobis
+                blanditiis rerum quam corrupti veritatis voluptatibus, sint iure aspernatur ipsa consequuntur, in illum vitae
+                totam consequatur debitis cum molestiae natus. Nobis deleniti distinctio, nisi consectetur illum in magnam
+                itaque. end
+            </p>
+        </section>
+        </div>
+        <footer class="navbar navbar-inverse navbar-fixed-bottom">
+            <div class="container">
+                <p class="navbar-text">&copy; PCS 2017</p>
+            </div>
+        </footer>
+
+        <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script-->
+        <script src="/jquery-1.12.4.min.js"></script>
+        <script src="/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>

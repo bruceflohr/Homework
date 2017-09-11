@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        /*body {
+            direction: rtl;
+        }*/
+
+        article {
+            border: 3px solid red;
+            /*display: inline-flex;*/
+            display: flex;
+            /*flex-direction: column;*/
+            /*flex-direction: row-reverse;*/
+            flex-direction: row;
+            /*flex-wrap: wrap-reverse;*/
+            /*flex-wrap: wrap;*/
+            flex-wrap: no-wrap;
+            justify-content: space-between;
+            height: 800px;
+            align-items: flex-start;
+            align-content:flex-start;
+        }
+
+        section {
+            border: 3px solid blue;
+        }
+
+        section:nth-child(4) {
+            /*font-size: 36px;*/
+            /*order: 1;
+            flex-grow: 1;
+            flex-shrink: 1;*/
+            /*flex-basis: 500px;
+
+            flex: 1 2 300px;*/
+            align-self: flex-end;
+        }
+
+        section:nth-child(5) {
+            /*order: 1;
+            flex-grow: 2;
+            flex-shrink: 2;*/
+            align-self: center;
+        }
+
+        section:nth-child(6) {
+            flex-shrink: 3;
+        }
+
+        section:nth-child(7) {
+            flex-shrink: 4;
+        }
+
+        section:nth-child(8) {
+            flex-shrink: 5;
+        }*/
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <header><h1>Flexbox</h1></header>
+    <article>
+        <section>
+            <div>
+                <h1>1</h1>
+                <p>Im a flex child</p>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h1>2</h1>
+                <p>Im a flex child</p>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h1>3</h1>
+                <p>Im a flex child</p>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h1>4</h1>
+                <p>Im a flex child</p>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h1>5</h1>
+                <p>Im a flex child</p>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h1>6</h1>
+                <p>Im a flex child</p>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h1>7</h1>
+                <p>Im a flex child</p>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h1>8</h1>
+                <p>Im a flex child</p>
+            </div>
+        </section>
+    </article>
+</body>
+</html>

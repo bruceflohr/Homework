@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        /*aside, article {
+            float: left;
+            padding: 4px;
+            box-sizing: border-box;
+        }
+
+        aside {
+            width: 20%;
+        }
+
+        article {
+            width: 60%;
+        }*/
+
+        .main {
+            display: flex;
+        }
+
+        /*aside, article {
+            flex: 1 1;
+        }*/
+
+        aside:first-of-type {
+            order: -1;
+        }
+
+        form div {
+            margin-bottom: 4px;
+        }
+
+        /*form label {
+            margin: 0;
+            display: inline-block;
+            width: 10%;
+            text-align: right;
+            padding-right: 4px;
+        }
+
+        form input {
+            margin: 0;
+            width: 90%;
+        }*/
+
+        form div {
+            display: flex;
+        }
+
+        form input {
+            flex-grow: 1;
+        }
+
+        section:nth-child(1) {
+            background-color: lightblue;
+        }
+
+        section:nth-child(2) {
+            background-color: lightpink;
+        }
+
+        section:nth-child(3) {
+            background-color: lightgray;
+        }
+
+        @media (min-width: 1000px) {
+            .callouts {
+                display: flex; 
+            }
+        }
+
+       .callouts {
+            justify-content: space-between;
+        }
+
+        .callouts section {
+            flex-basis: 30%;
+        }
+
+        /*.callouts section:nth-child(2) {
+            margin: 0 20px;
+        }*/
+
+        .nested {
+            display: flex;
+        }
+
+        .nested div {
+            display: flex;
+            flex: 1 1;
+        }
+
+        .nested div:last-child {
+            flex-direction: column;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <div>
+            <label for="name">Name:</label><!--
+            --><input id="name"/>
+        </div>
+        <div>
+            <label for="password">Password:</label><!--
+            --><input id="password" type="password"/>
+        </div>
+        <input type="submit"/>
+    </form>
+    <div class="main">
+        <article>
+            <h2>Main</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, soluta consequuntur repudiandae alias cumque? Unde fugiat veritatis, quis expedita nisi? Vel id ad veniam dignissimos doloremque ut neque, pariatur, expedita culpa corporis nostrum facere voluptatem dicta necessitatibus laborum assumenda labore obcaecati voluptatum a magni eveniet! Unde, quia, reprehenderit. Quidem obcaecati velit asperiores quod libero eius porro omnis accusantium officia provident esse rerum quis, est placeat sed beatae odio voluptatibus illum voluptatum ipsam tenetur, consequuntur aperiam! Eos id voluptas ea vero harum itaque dolorum eius. Minus earum, reiciendis quo, sapiente maiores libero molestiae necessitatibus corporis nam mollitia, molestias, ullam accusamus temporibus!
+            </p>
+        </article>
+        <aside>
+            <h2>Sidebar 1</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. In necessitatibus, nulla aut rerum tempore eum, cupiditate inventore ut delectus magnam omnis modi, rem. Nesciunt, error!
+            </p>
+        </aside>
+        <aside>
+            <h2>Sidebar 2</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. In necessitatibus, nulla aut rerum tempore eum, cupiditate inventore ut delectus magnam omnis modi, rem. Nesciunt, error!
+            </p>
+        </aside>
+    </div>
+    <div class="callouts">
+        <section>
+            <h2>Stuff!</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, quis, totam. Dicta suscipit fugit, deleniti enim laboriosam. Aspernatur iste ad nulla, dolore. At, harum excepturi.
+            </p>
+        </section>
+        <section>
+            <h2>Stuff!</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, quis, totam. Dicta suscipit fugit, deleniti enim laboriosam. Aspernatur iste ad nulla, dolore. At, harum excepturi.
+            </p>
+        </section>
+        <section>
+            <h2>Stuff!</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, quis, totam. Dicta suscipit fugit, deleniti enim laboriosam. Aspernatur iste ad nulla, dolore. At, harum excepturi.
+            </p>
+        </section>
+    </div>
+
+    <div class="nested">
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus tempora magnam laudantium repudiandae laborum, id quibusdam, eveniet illo corporis similique? Facilis fuga ullam, accusamus nihil explicabo at corrupti. Nam culpa amet excepturi aliquam vero, nobis labore dolor eligendi tempora in soluta porro accusamus voluptatem dignissimos mollitia dolores, facilis quae fugiat ipsa asperiores molestiae alias aperiam quis. Fugiat porro libero eius reprehenderit mollitia dolor ipsum ducimus totam, cupiditate sapiente, aspernatur provident vel magnam atque, nobis aut eaque cum laudantium, aperiam? Amet laboriosam, ipsum officia beatae doloribus alias temporibus aperiam quae consequuntur labore repellendus excepturi modi optio quo porro animi qui suscipit id assumenda. Nostrum laboriosam quod eligendi sed repellat! Repellat, autem, fugit! Quam, non! Eius magnam a nostrum sint quaerat optio tempore culpa aspernatur, eligendi totam ipsa obcaecati possimus voluptate illo velit ab aperiam fugiat, quasi, deserunt, officia repellat quam natus voluptatem! Dignissimos natus quis unde accusamus tenetur nemo, laborum delectus voluptatum cupiditate possimus asperiores a obcaecati distinctio vero ipsum nihil molestias veritatis autem impedit recusandae quibusdam earum tempora consequuntur sequi? Aut nesciunt in magni molestias ratione eligendi, rem numquam quas expedita quis consequuntur reiciendis voluptas harum inventore corrupti quia laudantium nihil modi quam a iusto cumque. Cupiditate, doloremque autem sunt.
+            </p>
+        </div>
+        <div>
+            <div>A</div>
+            <div>B</div>
+        </div>
+    </div>
+</body>
+</html>
