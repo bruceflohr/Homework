@@ -15,8 +15,8 @@ console.log(lowerLetter.some(isLower));
 ////////////////////////////
 
 function test(array, isUpper) {
-    if (array === isUpper) {
-        
+    if () {
+
     }
 }
 
