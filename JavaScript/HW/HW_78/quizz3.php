@@ -9,9 +9,12 @@
 </head>
 
 <body>
+<?php /*
     <script src="module1.js"></script>
     <script src="module2.js"></script>
     <script src="module3.js"></script>
+    */ ?>
+    <script src="module4.js"></script>
 </body>
 
 </html>

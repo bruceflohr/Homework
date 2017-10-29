@@ -16,9 +16,9 @@ app.module2 = (function () {
         this.Count += amount;
     }
 
-    function increment() {
+    /*function increment() {
         this.Count += 1;
-    }
+    }*/
 
     function increment2(time) {
         return {
@@ -28,19 +28,18 @@ app.module2 = (function () {
 
     var count1 = createCounter(0);
     var count2 = createCounter(0);
-    var count3 = createCounter(0);
-
-    increment.call(count1);
-    increment.call(count2);
-    var inc2 = increment2.call(count3, 10);
-    var inc3 = increment2.call(count3, 10);
 
 
+    var inc1 = increment2.call(count1, 10);
+    var inc2 = increment2.call(count2, 5);
+    var inc3 = increment2.call(count2, 15);
+
+    console.log(inc1);
     console.log(count1);
-    console.log(count2);
-    console.log(count3);
+
     console.log(inc2);
     console.log(inc3);
+    console.log(count2);
 
     console.log(i + " modules created");
 

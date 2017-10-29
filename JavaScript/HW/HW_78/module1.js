@@ -3,7 +3,7 @@ var app = app || {};
 app.module1 = (function () {
     "use strict";
 
-    var numbers = [2, 4, 6];
+    var numbers = [1, 2, 3];
     var doubles = numbers.map(function (x) {
         return x * 2;
     });
@@ -11,5 +11,4 @@ app.module1 = (function () {
     console.log(doubles);
 
 }(app.module1 || {}));
-
 
