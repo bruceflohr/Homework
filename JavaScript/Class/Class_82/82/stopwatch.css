@@ -1,0 +1,15 @@
+.stopwatch {
+    font-size: 2em;
+    font-weight: bold;
+    font-family: monospace;
+    display: inline-block;
+    text-align: right;
+}
+
+.buttons {
+    text-align: center;
+}
+
+.buttons button {
+    font-size: .5em;
+}
