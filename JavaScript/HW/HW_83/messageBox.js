@@ -16,7 +16,7 @@ pcs.messagebox = (function () {
         inputText.setAttribute("type", "text");
         var inputCheck = createElement("input");
         inputCheck.setAttribute("type", "checkbox");
-        inputCheck.setAttribute("id", "idCheck");
+        inputCheck.setAttribute("id", "checked");
 
         span.innerHTML = msg;
         div.appendChild(span);
@@ -47,16 +47,14 @@ pcs.messagebox = (function () {
         buttonDiv.style.marginLeft = '-20px';
 
         okButton.addEventListener("click", function () {
-            document.body.removeChild(div);
+            //document.body.removeChild(div);
+            if (document.getElementById('checked').checked) {
+                alert("checked");
+                document.body.removeChild(div);
+            } else {
+                alert("unchecked");
+            }
         });
-
-        
-
-        if (document.getElementById("idCheck").checked = true) {
-            alert("checked");
-        } else {
-            alert("unchecked");
-        }
     }
 
     return {
