@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #theDonald {
+            font-size: 64px;
+        }
+
+        #thing1 {
+            display: none;
+        }
+
+        #thing2 {
+            display: inline-block;
+        }
+
+        /*#name:hover {
+            background-color: yellow;
+        }*/
+
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="theDonald">Donald Trump</h1>
+    <h1 id="pcs">PCS</h1>
+    <h2 id="thing1">Thing #1</h2>
+    <h2 id="thing2">Thing #2</h2>
+    <h2 id="thing3">Thing #3</h2>
+    Enter your name:
+    <input id="name" />
+    <script src="/jquery-3.2.1.min.js"></script>
+    <script>
+        /*var dt = pcs.tools.get("theDonald");
+        pcs.tools.css(dt, "color", "red");*/
+        var dt = $("#theDonald");
+        dt.css("color", "red");
+        dt.css("backgroundColor", "black");
+        //dt.pulsate();
+
+        $("#pcs")
+            .css("color", "yellow")
+            .css("backgroundColor", "green")
+            //.pulsate()
+            .click(function (event) {
+                console.log("PCS was clicked", event);
+            })
+            .click(function () {
+                console.log("PCS was clicked - no event accepted");
+            });
+
+        //var thing1Clicks = 0;
+        var thing1 = $('#thing1')
+            .data('clicks', 0)
+            .hide()
+            .css("backgroundColor", "pink")
+            .click(function () {
+                //thing1.hide();
+                thing1.slideUp('slow');
+                //thing2.show();
+                thing2.slideDown('fast');
+                //thing3.hide();
+                thing3.slideUp(2000);
+                //console.log('thing 1 was clicked ', ++thing1Clicks, 'times');
+            });
+
+        //var thing2Clicks = 0;
+        var thing2 = $('#thing2')
+            .css({ backgroundColor: "purple", color: 'green' })
+            .click(function () {
+                //thing2.hide();
+                thing2.slideUp();
+                //thing1.show();
+                //thing3.show();
+                thing1.slideDown();
+                thing3.slideDown();
+                //console.log('thing 2 was clicked ', ++thing2Clicks, 'times');
+            });
+
+        var thing3 = $("#thing3");
+
+        $('h2')
+            .data('clicks', 0)
+            .click(function (event) {
+                //console.log('h2 was clicked', event, this);
+                var theClickedH2 = $(this);
+                theClickedH2.data('clicks',
+                    theClickedH2.data('clicks') + 1
+                )
+                console.log('this h2 was clicked ' + theClickedH2.data('clicks') + ' times');
+
+
+                theClickedH2
+                    .append('<p>Im new content</p>');
+                //.append('<button id="theNewButton">Click Me!</button>');
+
+                $('<button id="theNewButton">Click Me!</button>').appendTo(theClickedH2)
+                    .click(function () {
+                        console.log("New button was clicked");
+                    });
+            });
+
+        var theInput = $('#name');
+        theInput.change(function () {
+            console.log("name is now: ", this.value);
+        }).mouseenter(function () {
+            //theInput.css('background-color', 'yellow');
+            theInput.addClass('highlight');
+        }).mouseleave(function () {
+            //theInput.css('background-color', 'white');
+            theInput.removeClass('highlight');
+        });
+    </script>
+</body>
+
+</html>
