@@ -7,10 +7,45 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Class_90</title>
 </head>
+<style>
+    body {
+        text-align: center;
+    }
+
+    #left,
+    #right {
+        cursor: pointer;
+    }
+
+    #picture {
+        display: inline-block;
+    }
+
+    #left {
+        transform: rotate(180deg);
+    }
+</style>
 
 <body>
+    <input id="tag" type="text">
+    <button id="go">Go</button>
+    <div>
+        <img src="arrow.png" id="left">
+        <figure id="picture">
+            <img src="picture.media.m">
+            <ficaption>
+                <h2> </h2>
+            </ficaption>
+        </figure>
+        <img src="arrow.png" id="right">
+    </div>
+
+    <div id="pictures">
+
+    </div>
 
     <script scr="crossdomain.js"></script>
+    <script scr="carosel.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>
 
