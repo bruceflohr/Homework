@@ -1,5 +1,3 @@
-
-"use strict";
 document.getElementById('getPost').addEventListener('click', getPost);
 document.getElementById('addPost').addEventListener('submit', addPost);
 let info = document.getElementById('postInfo');
