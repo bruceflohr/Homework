@@ -1,3 +1,4 @@
+"use strict"
 document.getElementById('getPost').addEventListener('click', getPost);
 document.getElementById('addPost').addEventListener('submit', addPost);
 let info = document.getElementById('postInfo');
@@ -18,7 +19,7 @@ function renderHTML(data) {
     var htmlString = " ";
 
     for (let i = 0; i < pageCount; i++) {
-        htmlString += "<p>Title: " + data[i].title + "<br> " + data[i].body + "<hr></p>";
+        htmlString += "<h4>Title: " + data[i].title + "</h4><p> " + data[i].body + "<hr></p>";
     }
 
     info.insertAdjacentHTML('beforeend', htmlString);
