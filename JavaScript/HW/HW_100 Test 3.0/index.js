@@ -1,9 +1,17 @@
 "use strict"
-document.getElementById('getPost').addEventListener('click', getPost);
+//document.getElementById('getPost').addEventListener('click', getPost);
+document.getElementById('getPost').addEventListener('click', getPost2);
 document.getElementById('addPost').addEventListener('submit', addPost);
+document.getElementById('clear').addEventListener('click', clear);
 let info = document.getElementById('postInfo');
+let pageCount = 0;
 
-var pageCount = 0;
+function getPost2() {
+    getPost();
+    clear();
+}
+
+
 function getPost() {
     var ourRequest = new XMLHttpRequest();
     ourRequest.open('GET', 'https://jsonplaceholder.typicode.com/posts');
@@ -12,18 +20,28 @@ function getPost() {
         renderHTML(myData);
     };
     ourRequest.send();
-    pageCount += 3;
-};
+}
 
 function renderHTML(data) {
     var htmlString = " ";
-
-    for (let i = 0; i < pageCount; i++) {
-        htmlString += "<h4>Title: " + data[i].title + "</h4><p> " + data[i].body + "<hr></p>";
+    for (let i = pageCount; i < pageCount + 3; i++) {
+        htmlString += "<h4 id='postTitle'>Title: " + data[i].title + "</h4><p id='postBody'> " + data[i].body + "<br></p>";
     }
-
     info.insertAdjacentHTML('beforeend', htmlString);
 }
+
+function clear() {
+    let pageNum = 0;
+    if (pageNum < 1) {
+        let title = document.getElementById('postTitle');
+        let parent = title.parentNode;
+
+        while (parent.hasChildNodes()) {
+            parent.removeChild(parent.lastChild);
+        }
+    }
+}
+
 
 /*function getPost() {
     fetch('https://jsonplaceholder.typicode.com/posts')
@@ -59,5 +77,5 @@ function addPost(e) {
     })
         .then((res) => res.json())
         .then((data) => console.log(data))
-        .then(document.getElementById('output').innerHTML = 'Title: ' + title + ' ' + '<br>' + body + '<hr>');
+        .then(document.getElementById('output').innerHTML = '<h4 id="postTitle">Title: ' + title + '</h4> ' + '<p>' + body + '</p><br>');
 }
